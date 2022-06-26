@@ -2,7 +2,7 @@
 <img src="https://telegra.ph/file/091c5f4b46fcf1b96b1c8.jpg" alt="nz" width="350"/>
 </p>
 
-## X O F I Y = X 
+## X O F I Y = X = M D
 > <a href="https://youtu.be/W-QCp2fWRTo"><img src="https://img.shields.io/badge/Tutorial-Video-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://www.youtube.com/c/BOTINDO" /><br>
 
 > [Automated Multi Device whatsapp bot created](https://github.com/ESANDUWyte/X-O-F-I-Y---X---M-D) by [Indumina](github.com/ESANDUWyte)
