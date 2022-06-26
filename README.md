@@ -7,7 +7,7 @@
 
 > [Automated Multi Device whatsapp bot created](https://github.com/ESANDUWyte/X-O-F-I-Y---X---M-D) by [Indumina](github.com/ESANDUWyte)
 
-> Dont forget to give a star bro.🥲 IF Heroku Deploy seems Error, Fork This Repo And Try Deploy Again
+> Pls Give A Start Guys 🥲 IF Heroku Deploy seems Error, Fork This Repo And Try Deploy Again
 
 > If The Api Of This Bot Run Empty You Can Change it To Your Own Api By Changing [Here](https://github.com/ESANDUWyte/X-O-F-I-Y---X---M-D/blob/master/settings.js#L18) And Register [here](https://zenzapis.xyz/) to get apikey
 
@@ -49,21 +49,7 @@ Add FFmpeg to PATH environment variable
 
 <!-- Installation via Termux -->
 <b><details><summary>Installation on Termux</summary></b>
-```bash
-> apt update
-> apt upgrade
-> pkg update && pkg upgrade
-> pkg install bash
-> pkg install libwebp
-> pkg install git -y
-> pkg install nodejs -y 
-> pkg install ffmpeg -y 
-> pkg install wget
-> pkg install imagemagick -y
-> git clone https://github.com/ESANDUWyte/X-O-F-I-Y---X---M-D
-> cd Gojo-Satoru
-> npm install
-```
+```Comind Soon```
 </details>
 
 <!-- Edit -->
