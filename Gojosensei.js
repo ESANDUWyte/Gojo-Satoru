@@ -1366,7 +1366,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                if (!text) return replay(`Example : ${prefix + command} packname|author`)
           global.packname = text.split("|")[0]
           global.author = text.split("|")[1]
-          reply(`Exif Has Been Successfully Changed to\n\n🐦 Packname : ${global.packname}\n🐦 Author : ${global.author}`)
+          reply(`Exif Has Been Successfully Changed to\n\n💮 Packname : ${global.packname}\n💮 Author : ${global.author}`)
             }
             break
 	case 'kick': {
@@ -1478,7 +1478,7 @@ let teks = `╚»˙·٠•●♥ Tag All ♥●•٠·˙«╝
                 let anu = await styletext(text)
                 let teks = `Entered Text ${text}\n\n`
                 for (let i of anu) {
-                    teks += `🐦 *${i.name}* : ${i.result}\n\n`
+                    teks += `💮 *${i.name}* : ${i.result}\n\n`
                 }
                 reply(teks)
 	    }
@@ -1769,7 +1769,7 @@ break
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🎀Menu🎀',
+                                    displayText: '💮Menu💮',
                                     id: 'menu'
                                 }
                             }, {
@@ -1778,7 +1778,7 @@ break
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「 GOJO-SATORU HERE🎉 」\n\n${text}`
+                      let txt = `「 XOFIY-X HERE🎉 」\n\n${text}`
                       GojoMdNx.send5ButImg(i, txt, GojoMdNx.user.name, global.thumb, btn)
                     }
                 reply(`Successful Sending Broadcast To ${anu.length} Group(s)`)
@@ -1803,7 +1803,7 @@ break
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🎀Menu🎀',
+                                    displayText: '💮Menu💮',
                                     id: 'menu'
                                 }
                             }, {
@@ -1812,7 +1812,7 @@ break
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「 GOJO-SATORU HERE 🎉」\n\n${text}`
+                      let txt = `「 XOFIY-X HERE 🎉」\n\n${text}`
                       GojoMdNx.send5ButImg(yoi, txt, GojoMdNx.user.name, global.thumb, btn)
 		}
 		reply('Broadcast Success')
@@ -1827,8 +1827,8 @@ break
                     let read = i.readTimestamp
                     let unread = i.receiptTimestamp
                     let waktu = read ? read : unread
-                    teks += `🐦 @${i.userJid.split('@')[0]}\n`
-                    teks += ` ┗━🐦 *Time :* ${moment(waktu * 1000).format('DD/MM/YY HH:mm:ss')} 🐦 *Status :* ${read ? 'Read' : 'Sent'}\n\n`
+                    teks += `💮 @${i.userJid.split('@')[0]}\n`
+                    teks += ` ┗━💮 *Time :* ${moment(waktu * 1000).format('DD/MM/YY HH:mm:ss')} 💮 *Status :* ${read ? 'Read' : 'Sent'}\n\n`
                 }
                 GojoMdNx.sendTextWithMentions(m.chat, teks, m)
             }
@@ -1863,7 +1863,7 @@ break
              case 'listonlinexxx': case 'onlinelistxxx': {
                     let id = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : m.chat
                     let online = [...Object.keys(store.presences[id]), botNumber]
-                    GojoMdNx.sendText(m.chat, 'Online List:\n\n' + online.map(v => '🐦 @' + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
+                    GojoMdNx.sendText(m.chat, 'Online List:\n\n' + online.map(v => '💮 @' + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
              }
              break
             case 'sticker': case 's': case 'stickergif': case 'sgif': {
@@ -2062,12 +2062,12 @@ break
         n = result
         images = n[Math.floor(Math.random() * n.length)].url
         let buttons = [
-                    {buttonId: `gimage ${text}`, buttonText: {displayText: '➡️➡️Next Image➡️➡️'}, type: 1}
+                    {buttonId: `gimage ${text}`, buttonText: {displayText: '➡️➡Next Image➡➡️'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: images },
                     caption: `*-------「 GIMAGE SEARCH 」-------*
-🤠 *Query* : ${text}
+🖤 *Query* : ${text}
 🔗 *Media Url* : ${images}`,
                     footer: GojoMdNx.user.name,
                     buttons: buttons,
@@ -2089,16 +2089,16 @@ break
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
                     caption: `
-🐦 Title : ${anu.title}
-🐦 Ext : Search
-🐦 ID : ${anu.videoId}
-🐦 Duration : ${anu.timestamp}
-🐦 Viewes : ${anu.views}
-🐦 Uploaded On : ${anu.ago}
-🐦 Author : ${anu.author.name}
-🐦 Channel : ${anu.author.url}
-🐦 Description : ${anu.description}
-🐦 Url : ${anu.url}`,
+ 💮Title : ${anu.title}
+ 💮Ext : Search
+ 💮ID : ${anu.videoId}
+ 💮Duration : ${anu.timestamp}
+ 💮Viewes : ${anu.views}
+ 💮Uploaded On : ${anu.ago}
+ 💮Author : ${anu.author.name}
+ 💮Channel : ${anu.author.url}
+ 💮Description : ${anu.description}
+ 💮 Url : ${anu.url}`,
                     footer: GojoMdNx.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2112,7 +2112,7 @@ break
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                GojoMdNx.sendImage(m.chat, media.thumb, `🐦 Title : ${media.title}\n🐦 File Size : ${media.filesizeF}\n🐦 Url : ${isUrl(text)}\n🐦 Ext : MP3\n🐦 Resolution : ${args[1] || '320kbps'}`, m)
+                GojoMdNx.sendImage(m.chat, media.thumb, `💮 Title : ${media.title}\n💮 File Size : ${media.filesizeF}\n💮 Url : ${isUrl(text)}\n💮 Ext : MP3\n💮 Resolution : ${args[1] || '320kbps'}`, m)
                 GojoMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
@@ -2122,7 +2122,7 @@ break
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                GojoMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🐦 Title : ${media.title}\n🐦 File Size : ${media.filesizeF}\n🐦 Url : ${isUrl(text)}\n🐦 Ext : MP3\n🐦 Resolution : ${args[1] || '360p'}` }, { quoted: m })
+                GojoMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `💮 Title : ${media.title}\n💮 File Size : ${media.filesizeF}\n💮 Url : ${isUrl(text)}\n💮 Ext : MP3\n💮 Resolution : ${args[1] || '360p'}` }, { quoted: m })
             }
             break
 	    case 'getmusicxxx': {
@@ -2131,7 +2131,7 @@ break
                 let quality = args[1] ? args[1] : '128kbps'
                 let media = await yta(urls[text - 1], quality)
                 if (media.filesize >= 100000) return reply('File Over Limit '+util.format(media))
-                GojoMdNx.sendImage(m.chat, media.thumb, `🐦 Title : ${media.title}\n🐦 File Size : ${media.filesizeF}\n🐦 Url : ${urls[text - 1]}\n🐦 Ext : MP3\n🐦 Resolution : ${args[1] || '128kbps'}`, m)
+                GojoMdNx.sendImage(m.chat, media.thumb, `💮 Title : ${media.title}\n💮 File Size : ${media.filesizeF}\n💮 Url : ${urls[text - 1]}\n💮 Ext : MP3\n💮 Resolution : ${args[1] || '128kbps'}`, m)
                 GojoMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
@@ -2145,7 +2145,7 @@ break
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(urls[text - 1], quality)
                 if (media.filesize >= 100000) return reply('File Over Limit '+util.format(media))
-                GojoMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🐦 Title : ${media.title}\n🐦 File Size : ${media.filesizeF}\n🐦 Url : ${urls[text - 1]}\n🐦 Ext : MP3\n🐦 Resolution : ${args[1] || '360p'}` }, { quoted: m })
+                GojoMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `💮 Title : ${media.title}\n💮 File Size : ${media.filesizeF}\n💮 Url : ${urls[text - 1]}\n💮 Ext : MP3\n💮 Resolution : ${args[1] || '360p'}` }, { quoted: m })
             }
             break
             case 'pinterest': {
@@ -2390,7 +2390,7 @@ break
                 ]
                 let buttonMessage = {
                     image: { url: result.image[0] },
-                    caption: `🐦 Title : ${result.title}\n🐦 Category : ${result.type}\n🐦 Detail : ${result.source}\n🐦 Media Url : ${result.image[2] || result.image[1] || result.image[0]}`,
+                    caption: `💮 Title : ${result.title}\n💮 Category : ${result.type}\n💮 Detail : ${result.source}\n💮 Media Url : ${result.image[2] || result.image[1] || result.image[0]}`,
                     footer: GojoMdNx.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2408,7 +2408,7 @@ break
                 ]
                 let buttonMessage = {
                     image: { url: result.image },
-                    caption: `🐦 Title : ${result.title}\n🐦 Source : ${result.source}\n🐦 Media Url : ${result.image}`,
+                    caption: `💮 Title : ${result.title}\n💮 Source : ${result.source}\n💮 Media Url : ${result.image}`,
                     footer: GojoMdNx.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2456,7 +2456,7 @@ break
                 if (!Number(text)) return reply(`Example : ${prefix + command} 916909137213`)
                 let anu = await primbon.nomer_hoki(Number(text))
                 if (anu.status == false) return reply(anu.message)
-                GojoMdNx.sendText(m.chat, `🐦 *Phone Number :* ${anu.message.nomer_hp}\n🐦 *Shuzi Angka Figures :* ${anu.message.angka_shuzi}\n🐦 *Positive Energy :*\n- Riches : ${anu.message.energi_positif.kekayaan}\n- Health : ${anu.message.energi_positif.kesehatan}\n- Love : ${anu.message.energi_positif.cinta}\n- Stability : ${anu.message.energi_positif.kestabilan}\n- Percentage : ${anu.message.energi_positif.persentase}\n🐦 *Negative Energy :*\n- Dispute : ${anu.message.energi_negatif.perselisihan}\n- Lost : ${anu.message.energi_negatif.kehilangan}\n- Catastrophe : ${anu.message.energi_negatif.malapetaka}\n- Destruction : ${anu.message.energi_negatif.kehancuran}\n- Percentage : ${anu.message.energi_negatif.persentase}`, m)
+                GojoMdNx.sendText(m.chat, `💮 *Phone Number :* ${anu.message.nomer_hp}\n💮 *Shuzi Angka Figures :* ${anu.message.angka_shuzi}\n💮 *Positive Energy :*\n- Riches : ${anu.message.energi_positif.kekayaan}\n- Health : ${anu.message.energi_positif.kesehatan}\n- Love : ${anu.message.energi_positif.cinta}\n- Stability : ${anu.message.energi_positif.kestabilan}\n- Percentage : ${anu.message.energi_positif.persentase}\n🐦 *Negative Energy :*\n- Dispute : ${anu.message.energi_negatif.perselisihan}\n- Lost : ${anu.message.energi_negatif.kehilangan}\n- Catastrophe : ${anu.message.energi_negatif.malapetaka}\n- Destruction : ${anu.message.energi_negatif.kehancuran}\n- Percentage : ${anu.message.energi_negatif.persentase}`, m)
             }
             break
             case 'artimimpi': case 'tafsirmimpi': {
@@ -2471,7 +2471,7 @@ break
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.ramalan_jodoh(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return reply(anu.message)
-                GojoMdNx.sendText(m.chat, `🐦 *Your Name :* ${anu.message.nama_anda.nama}\n🐦 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n🐦 *Couple Name :* ${anu.message.nama_pasangan.nama}\n🐦 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n🐦 *Results :* ${anu.message.result}\n🐦 *Notes :* ${anu.message.catatan}`, m)
+                GojoMdNx.sendText(m.chat, `💮 *Your Name :* ${anu.message.nama_anda.nama}\n💮 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n💮 *Couple Name :* ${anu.message.nama_pasangan.nama}\n🐦💮 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n💮 *Results :* ${anu.message.result}\n💮 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'ramalanjodohbali': case 'ramaljodohbali': {
@@ -2846,7 +2846,7 @@ break
                 if (!text) return reply(`No Query Title`)
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/joox', { query: text }, 'apikey'))
-                let msg = await GojoMdNx.sendImage(m.chat, anu.result.img, `🐦 Title : ${anu.result.lagu}\n🐦 Album : ${anu.result.album}\n🐦 Singer : ${anu.result.penyanyi}\n🐦 Publish : ${anu.result.publish}\n🐦 Lyrics :\n${anu.result.lirik.result}`, m)
+                let msg = await GojoMdNx.sendImage(m.chat, anu.result.img, `💮 Title : ${anu.result.lagu}\n💮 Album : ${anu.result.album}\n💮 Singer : ${anu.result.penyanyi}\n💮 Publish : ${anu.result.publish}\n💮 Lyrics :\n${anu.result.lirik.result}`, m)
                 GojoMdNx.sendMessage(m.chat, { audio: { url: anu.result.mp4aLink }, mimetype: 'audio/mpeg', fileName: anu.result.lagu+'.m4a' }, { quoted: msg })
             }
             break
@@ -2854,7 +2854,7 @@ break
                 if (!text) return reply(`No Query Title`)
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/soundcloud', { url: isUrl(text)[0] }, 'apikey'))
-                let msg = await GojoMdNx.sendImage(m.chat, anu.result.thumb, `🐦 Title : ${anu.result.title}\n🐦 Url : ${isUrl(text)[0]}`)
+                let msg = await GojoMdNx.sendImage(m.chat, anu.result.thumb, `💮 Title : ${anu.result.title}\n💮 Url : ${isUrl(text)[0]}`)
                 GojoMdNx.sendMessage(m.chat, { audio: { url: anu.result.url }, mimetype: 'audio/mpeg', fileName: anu.result.title+'.m4a' }, { quoted: msg })
             }
             break
@@ -2919,11 +2919,11 @@ break
 		    let buttonMessage = {
 		        image: { url: anu.author.profilePic },
 			caption: `
-🐦 Title : ${anu.title}
-🐦 Author : ${anu.author.name}
-🐦 Like : ${anu.like}
-🐦 Caption : ${anu.caption}
-🐦 Url : ${anu.media[0]}
+💮 Title : ${anu.title}
+💮 Author : ${anu.author.name}
+💮 Like : ${anu.like}
+💮 Caption : ${anu.caption}
+💮 Url : ${anu.media[0]}
 To Download Media, Please Click One Of The Buttons Below Or Enter The ytmp3/ytmp4 Command With The Url Above
 `,
 			footer: GojoMdNx.user.name,
@@ -3384,10 +3384,10 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./GojoMedia/gojo.jpg')},
                             hydratedFooterText: `┌─❖
-│「 Hi 👋 」
+│「 Hi 💮 」
 └┬❖ 「 ${pushname} 」
-┌┤✑  Shashi burina thaicho🎉
-││✑  🐦🖐️!!
+┌┤✑  Hello Bro
+││✑  💮🤍!!
 │└───────────────┈ ⳹
 │ 「 BOT INFO 」
 │✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
@@ -3418,7 +3418,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '🍒List Menu🍒',
+                                    displayText: '🤍List Menu🤍',
                                     id: `${prefix}command`
                                 }
                                 }, {
@@ -3447,7 +3447,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ┌─❖
 │「 Hi 👋 」
 └┬❖ 「 ${pushname} 」
-┌┤✑  Daijobka sempai?😄
+┌┤✑  How Are You Ah💮🤍
 │└───────────────┈ ⳹
 │ 「 BOT INFO 」
 │✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
@@ -3478,12 +3478,12 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: 'List Menu⭐',
+                                    displayText: 'List Menu🤍',
                                     id: `${prefix}command`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: 'Owner🐦',
+                                    displayText: 'Owner💮',
                                     id: `${prefix}owner`
                                 }
                             }]
