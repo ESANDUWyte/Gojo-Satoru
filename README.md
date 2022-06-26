@@ -49,7 +49,7 @@ Add FFmpeg to PATH environment variable
 
 <!-- Installation via Termux -->
 <b><details><summary>Installation on Termux</summary></b>
-```Comind Soon```
+```Coming Soon```
 </details>
 
 <!-- Edit -->
@@ -66,7 +66,7 @@ global.ownername = ["YourName"]
 
 
 <!-- 24hrs-->
-<b><details><summary>Comin Soon</summary></b>
+<b><details><summary>Coming Soon</summary></b>
 <b><details><summary>Available Features</summary><br>
 	
 | Features |  Availability |
